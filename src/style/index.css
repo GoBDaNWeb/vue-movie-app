@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body::-webkit-scrollbar-thumb  {
+        width: 3px;
+        background: #111113;
+        border-radius: 10rem;
+    }
+    body::-webkit-scrollbar  {
+        background: #27272a;
+        width: .6rem;
+    }
+    .auth {
+        @apply outline-none dark:bg-gray-400 bg-gray-100 px-4 py-2 rounded-full font-medium border-2 dark:border-gray-500 dark:focus:border-gray-600 focus:border-gray-300 dark:placeholder-gray-700 placeholder-gray-400
+    }
+    button:disabled {
+        @apply opacity-50 pointer-events-none
+    }
+    .disabled {
+        @apply opacity-50 pointer-events-none
+    }
+    .bg {
+        background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,0.76234243697479) 0%, rgba(0,0,0,0.38699229691876746) 74%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
+    }
+    .bg-r {
+        background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.76234243697479) 27%, rgba(0,0,0,0.3309698879551821) 100%, rgba(255,255,255,0) 100%, rgba(255,255,255,0) 100%);
+    }
+    .scroll::-webkit-scrollbar {
+        height: .5rem;
+        background: #18181b;
+    }
+    .scroll::-webkit-scrollbar-thumb {
+        background: #111113;
+    }
+
+}
